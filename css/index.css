@@ -266,7 +266,62 @@ p._sm {
   text-align: left;
 }
 /******************* END OUR PURPOSE ***************************/
-
+/******************* END FOOTER ***************************/
+footer{
+  width: 100%;
+  padding-top: 66px ;
+  padding-bottom: 116px;
+  background: #F4781F;
+}
+footer .copyright{
+  padding-top: 106px;
+}
+footer .copyright h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #E5E5E5;
+  padding-bottom: 24px;
+}
+footer .copyright p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #E5E5E5;
+}
+footer .copyright p:first-of-type{
+  padding-bottom: 18px;
+}
+footer .socials__{
+  padding-top: 84px;
+}
+footer .socials__ p, footer .address p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.footer_header{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+h2.top{
+  padding-bottom: 32px;
+}
+p.__address__padding{
+  padding-bottom: 32px;
+}
+/******************* END FOOTER***************************/
 /****************** START LARGE SCREENS ******************/
 @media screen and (max-width: 1300px) {
 }
