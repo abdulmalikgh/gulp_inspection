@@ -228,6 +228,44 @@ p._sm {
   background-image: url("../images/image 5.svg");
 }
 /******************* END WHO ARE WE ***************************/
+/******************* START OUR PURPOSE ***************************/
+.__our_purpose {
+  padding-top: 48px;
+  padding-bottom: 143px;
+}
+.__purpose__inner {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.__purpose__card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+._side {
+  width: 25%;
+}
+.__middle {
+  width: 35%;
+}
+.___text__header {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #454444;
+  padding-top: 41px;
+  padding-bottom: 16px;
+  margin-bottom: 0px!important;
+}
+._purpose_text{
+  color: #454444;
+  text-align: left;
+}
+/******************* END OUR PURPOSE ***************************/
 
 /****************** START LARGE SCREENS ******************/
 @media screen and (max-width: 1300px) {
