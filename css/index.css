@@ -19,14 +19,14 @@ p {
   height: 100%;
 }
 /******************* DEFAULT FONT ***************************/
-p._large{
+p._large {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
   line-height: 25px;
 }
-p._sm{
+p._sm {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -34,7 +34,7 @@ p._sm{
   line-height: 21px;
 }
 /******************* DEFAULT ***************************/
-.page__padding{
+.page__padding {
   padding-right: 20%;
   padding-left: 20%;
 }
@@ -54,7 +54,7 @@ p._sm{
   font-weight: 600;
   font-size: 22px;
   line-height: 33px;
-  color:#454444;
+  color: #454444;
   text-transform: uppercase;
 }
 ._bg_color {
@@ -69,6 +69,7 @@ p._sm{
   color: #7c7c7c;
   padding-bottom: 0.5em;
 }
+/******************* HEADER ***************************/
 /******************* NAVIGATION ***************************/
 .gulf_page_nav {
   height: 100%;
@@ -131,14 +132,14 @@ p._sm{
   color: #c4c4c4;
 }
 /******************* START WHAT WE DO ***************************/
-._what_we_do{
-  padding-top: 66px;
-  padding-bottom: 66px;
+._what_we_do {
+  padding-top: 48px;
+  padding-bottom: 56px;
 }
-._what_we_do .__section__header{
+.__section__header {
   width: 100%;
-  border-bottom: 5px solid #F4781F!important;
-  padding: 0px!important;
+  border-bottom: 5px solid #f4781f !important;
+  padding: 0px !important;
 }
 .__section__header h2 {
   font-family: Poppins;
@@ -146,65 +147,92 @@ p._sm{
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  color: #F4781F;
-  margin-bottom: 0px!important;
+  color: #f4781f;
+  margin-bottom: 0px !important;
 }
-.__text__section{
+.__text__section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.__product_audit{
-  padding-top: 30px;
+.__product_audit {
+  padding-top: 40px;
 }
-.__text__section p{
+.__text__section p {
   color: #454444;
 }
-.__section__images{
-  width:100%;
+.__section__images {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.__image_card{
+.__image_card {
   width: 247px;
   height: 249px;
+  margin-bottom: 10px;
   display: flex;
-  color:#ffffff;
+  color: #ffffff;
   padding: 190px 18px 18px 18px;
 }
-.__grain{
+.__grain {
   background-image: url("../images/Rectangle 16.svg");
 }
-.__bars{
+.__bars {
   background-image: url("../images/Rectangle 19.svg");
 }
-.__pipes{
+.__pipes {
   background-image: url("../images/Rectangle 18.svg");
 }
-.__gold{
+.__gold {
   background-image: url("../images/Rectangle 20.svg");
 }
-.__cargo{
+.__cargo {
   background-image: url("../images/Rectangle 21.svg");
 }
-.__vessel{
+.__vessel {
   background-image: url("../images/Rectangle 22.svg");
 }
-.__bulk{
+.__bulk {
   background-image: url("../images/Rectangle 23.svg");
 }
-/* CARD IMAGES */
-
-/******************* START WHAT WE DO ***************************/
-/******************* HEADER ***************************/
-
+/******************* END WHAT WE DO ***************************/
+/******************* START WHO ARE WE ***************************/
+.__who_we_are {
+  width: 100%;
+  background: rgba(244, 120, 31, 0.2);
+  padding-top: 48px;
+  padding-bottom: 86px;
+}
+.__text__and__image {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+._what_we_do_image {
+  width: 430px;
+  height: 313px;
+}
+._what_we_do_text {
+  width: 613px;
+}
+._what_we_do_text p {
+  line-height: 25px;
+  color: #454444;
+}
+.__gulf_inspection {
+  background-image: url("../images/image 3.svg");
+  margin-bottom: 50px;
+}
+.__the_company {
+  background-image: url("../images/image 5.svg");
+}
+/******************* END WHO ARE WE ***************************/
 
 /****************** START LARGE SCREENS ******************/
 @media screen and (max-width: 1300px) {
-  
 }
 /******************  END LARGE SCREENS ******************/
-
 
 /****************** START TABLET  SCREENS ******************/
 
