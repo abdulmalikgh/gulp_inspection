@@ -154,11 +154,47 @@ p._sm{
   padding-bottom: 40px;
 }
 .__product_audit{
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .__text__section p{
   color: #454444;
 }
+.__section__images{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.__image_card{
+  width: 247px;
+  height: 249px;
+  display: flex;
+  color:#ffffff;
+  padding: 190px 18px 18px 18px;
+}
+.__grain{
+  background-image: url("../images/Rectangle 16.svg");
+}
+.__bars{
+  background-image: url("../images/Rectangle 19.svg");
+}
+.__pipes{
+  background-image: url("../images/Rectangle 18.svg");
+}
+.__gold{
+  background-image: url("../images/Rectangle 20.svg");
+}
+.__cargo{
+  background-image: url("../images/Rectangle 21.svg");
+}
+.__vessel{
+  background-image: url("../images/Rectangle 22.svg");
+}
+.__bulk{
+  background-image: url("../images/Rectangle 23.svg");
+}
+/* CARD IMAGES */
+
 /******************* START WHAT WE DO ***************************/
 /******************* HEADER ***************************/
 
