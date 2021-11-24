@@ -271,6 +271,9 @@ nav.__nav{
 }
 /******************* END WHO ARE WE ***************************/
 /******************* START OUR PURPOSE ************************/
+.__our_purpose__wrapper{
+  background-color: #ffffff;
+}
 .__our_purpose {
   padding-top: 48px;
   padding-bottom: 143px;
@@ -388,6 +391,23 @@ p.__address__padding{
 
 /****************** START TABLET  SCREENS ******************/
 @media screen and (max-width: 767px) {
+  .__purpose__inner {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  ._side {
+    width: 40%;
+  }
+  .__middle {
+    width: 40%;
+  }
+  ._last_side{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+  }
   .__bulk{
     margin-right: auto;
     margin-left: auto;
@@ -468,6 +488,26 @@ p.__address__padding{
   }
 }
 @media screen and (max-width: 500px) {
+  .__our_purpose {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .__purpose__inner {
+    padding-top: 50px;
+  }
+  ._side {
+    width: 48%;
+  }
+  .__middle {
+    width: 48%;
+  }
+  .___text__header{
+    padding-top: 10px;
+  }
+ .__img img{
+   width: 40px;
+   height: 40px;
+  }
   .nav__toggler {
     display: inline;
     margin-right: 1em;
