@@ -318,6 +318,13 @@ footer{
   padding-bottom: 116px;
   background: #F4781F;
 }
+.__footer__card__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.__footer__card{
+  width: 300px;
+}
 footer .copyright{
   padding-top: 106px;
 }
@@ -516,6 +523,25 @@ p.__address__padding{
     font-size: 21px;
   }
 }
+@media screen and (max-width: 668px) {
+  .footer_header{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .__footer__card{
+    width: 50%;
+  }
+  .__footer__card p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px!important;
+    line-height: 13px;
+  }
+}
 @media screen and (max-width: 500px) {
   .__image_card {
     padding: 90px 5%  5% 5%;
@@ -576,6 +602,13 @@ p.__address__padding{
   } 
   p{
     font-size: 15px;
+  }
+  .__footer__card p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px!important;
+    line-height: 13px;
   }
 }
 @media screen and (max-width: 400px) {
