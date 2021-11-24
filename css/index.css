@@ -18,7 +18,10 @@ p {
   width: 100%;
   height: 100%;
 }
-/******************* DEFAULT FONT ***************************/
+section {
+  width: 100%;
+}
+/******************* DEFAULT FONT ********************/
 p._large {
   font-family: Poppins;
   font-style: normal;
@@ -33,21 +36,31 @@ p._sm {
   font-size: 14px;
   line-height: 21px;
 }
-/******************* DEFAULT ***************************/
+/******************* DEFAULT ************************/
 .page__padding {
   padding-right: 20%;
   padding-left: 20%;
 }
-/******************* DEFAULT ***************************/
+._padding__section__wrapper{
+  max-width: 1072px!important;
+  margin-right: auto;
+  margin-left: auto;
+}
+/******************* DEFAULT **************************/
 /******************* HEADER ***************************/
 .gulf_page_header {
+  width: 100%;
   height: 94px;
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+nav.__nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: inherit;
 }
+
 .gulf_page_logo h2 {
   font-family: Poppins;
   font-style: normal;
@@ -69,8 +82,28 @@ p._sm {
   color: #7c7c7c;
   padding-bottom: 0.5em;
 }
+.nav__toggler{
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-right: 2em;
+  display: none;
+  width: 30px;
+}
+.nav__toggler:active, .nav__toggler:hover{
+  border:none;
+  outline: none;
+}
+.nav__toggler div{
+  height: 2px;
+  background-color: #000000;;
+  width: 30px;
+}
+.nav__toggler div:not(:last-child){
+  margin-bottom: 6px;
+}
 /******************* HEADER ***************************/
-/******************* NAVIGATION ***************************/
+/******************* NAVIGATION ***********************/
 .gulf_page_nav {
   height: 100%;
   display: flex;
@@ -106,6 +139,7 @@ p._sm {
   background: url("../images/pexels-janrune-smenes-reite-3207536 1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +165,7 @@ p._sm {
   line-height: 27px;
   color: #c4c4c4;
 }
-/******************* START WHAT WE DO ***************************/
+/******************* START WHAT WE DO *************************/
 ._what_we_do {
   padding-top: 48px;
   padding-bottom: 56px;
@@ -196,7 +230,7 @@ p._sm {
   background-image: url("../images/Rectangle 23.svg");
 }
 /******************* END WHAT WE DO ***************************/
-/******************* START WHO ARE WE ***************************/
+/******************* START WHO ARE WE *************************/
 .__who_we_are {
   width: 100%;
   background: rgba(244, 120, 31, 0.2);
@@ -228,7 +262,7 @@ p._sm {
   background-image: url("../images/image 5.svg");
 }
 /******************* END WHO ARE WE ***************************/
-/******************* START OUR PURPOSE ***************************/
+/******************* START OUR PURPOSE ************************/
 .__our_purpose {
   padding-top: 48px;
   padding-bottom: 143px;
@@ -265,7 +299,7 @@ p._sm {
   color: #454444;
   text-align: left;
 }
-/******************* END OUR PURPOSE ***************************/
+/******************* END OUR PURPOSE **********************/
 /******************* END FOOTER ***************************/
 footer{
   width: 100%;
@@ -322,11 +356,118 @@ p.__address__padding{
   padding-bottom: 32px;
 }
 /******************* END FOOTER***************************/
-/****************** START LARGE SCREENS ******************/
+/****************** START LARGE AND MEDIUM DESKTOP SCREENS ******************/
 @media screen and (max-width: 1300px) {
 }
-/******************  END LARGE SCREENS ******************/
+@media screen and (max-width:  1150px) {
+  ._padding__section__wrapper{
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+}
+@media screen and (max-width:  950px) {
+  .gulf_nav_item {
+    display: inline;
+    margin-left: 1em;
+  }
+}
+
+/******************  END LARGE AND MEDIUM DESKTOP ******************/
 
 /****************** START TABLET  SCREENS ******************/
-
+@media screen and (max-width: 767px) {
+  .gulf_page_nav{
+    display: none;
+  }
+  .gulf_page_logo{
+    height: 43px;
+    display: flex;
+    align-items: center!important;
+  }
+  .gulf_page_logo h2{
+    padding-top: .5em;
+  }
+  .nav__toggler {
+    display: inline;
+  }
+  .gulf_page_header {
+    box-shadow: 0px 0px 0px 0px;
+  }
+  /* HERO  */
+  .__hero__section{
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  .gulf_hero {
+    width: 100%;
+    height: 600px;
+    background: url("../images/hero_sm.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav__toggler {
+    display: inline;
+    margin-right: 1em;
+  }
+  .gulf_page_logo h2 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gulf_hero_header{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .nav__toggler{
+    display: inline;
+    margin-right: 1em;
+  }
+  .gulf_page_logo h2 {
+    font-size: 19px;
+  }
+  #gulf_sm_text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+  }
+  .gulf_hero {
+    width: 100%;
+    height: 308px;
+    background: url("../images/hero_sm.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+}
+@media screen and (max-width: 400px) {
+  .gulf_page_logo h2 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .gulf_page_logo h2 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .gulf_page_logo h2 {
+    font-size: 13px;
+  }
+}
 /****************** START TABLET SCREENS ******************/
