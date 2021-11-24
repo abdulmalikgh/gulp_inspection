@@ -1,5 +1,8 @@
+section {
+  background: #fff;
+}
 .__contact_us_container {
-  margin-bottom: 137px;
+  margin-bottom: 83px;
   margin-top: 48px;
 }
 .contact_header {
@@ -30,23 +33,22 @@
 }
 ._eastern_zone {
   padding-top: 32px;
-  padding-bottom: 83px;
 }
 ._contact_card {
   max-width: 250px !important;
 }
-._contact_4{
-    display: none;
+._contact_4 {
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .__contact_row {
     flex-direction: column;
   }
-  ._contact_4{
-      display: block;
+  ._contact_4 {
+    display: block;
   }
-  .__large_contact{
-      display: none;
+  .__large_contact {
+    display: none;
   }
   ._eastern_zone {
     padding-bottom: 0px;
@@ -54,12 +56,76 @@
 }
 @media screen and (max-width: 500px) {
   .__contact_us_container {
-    padding-bottom: 56px;
-    margin-top: 0px;
+    margin-bottom: 26px !important;
     margin-top: 0px !important;
   }
   .contact_header {
     padding-top: 24px;
     padding-bottom: 8px;
+  }
+}
+
+/* DROP A MESSAGE */
+.form_container {
+  width: 100%;
+}
+.__email_and_phone {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.__email_and_phone > div {
+  width: 48%;
+}
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #c4c4c4;
+  padding-bottom: 8px;
+  padding-top: 55px;
+}
+input[type="textarea"] {
+  padding-bottom: 56px;
+}
+._form_button {
+  padding-top: 77px;
+  padding-bottom: 137px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #ffffff;
+  width: 184px;
+  height: 44px;
+  background: #f4781f;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  .__email_and_phone {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .__email_and_phone > div {
+    width: 100%;
+  }
+  ._form_button {
+    padding-top: 77px;
+    padding-bottom: 97px;
   }
 }
