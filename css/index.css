@@ -63,7 +63,7 @@ nav {
 .nav-link {
   color: #454444 !important;
 }
-.__app__logo{
+.__app__logo {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -120,8 +120,15 @@ nav {
   border: none;
   background: transparent;
   margin-right: 2em;
-  display: none;
   width: 30px;
+}
+.close_btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-right: 1em;
 }
 .nav__toggler:active,
 .nav__toggler:hover {
@@ -151,30 +158,119 @@ nav {
   font-size: 12px;
   line-height: 18px;
   color: #454444;
-  background-color:#fff;
+  background-color: #fff;
   height: 48px;
   display: flex;
   align-items: center;
 }
-.dropdown-menu a:first-of-type{
-  border-bottom: 1px solid rgba(244, 120, 31, 0.2);;
+.dropdown-menu a:first-of-type {
+  border-bottom: 1px solid rgba(244, 120, 31, 0.2);
 }
-.dropdown-item:active{
+.dropdown-item:active {
   background-color: transparent;
 }
-.navbar-toggler{
+.navbar-toggler {
   outline: none;
-  border:none;
+  border: none;
 }
-.navbar-toggler:active,.navbar-toggler:hover, .navbar-toggler:focus{
+.navbar-toggler:active,
+.navbar-toggler:hover,
+.navbar-toggler:focus {
   outline: none;
-  border:none;
+  border: none;
+}
+
+/* navbar collapse */
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+.smal__screen__navigation {
+  display: none;
+}
+.nav__toggler {
+  display: none;
+  transition: all 0.5s;
+}
+.close_btn {
+  font-size: 40px;
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .__wrapper_small {
+    display: flex;
+  }
+  .nav__toggler {
+    display: inline;
+  }
+  .smal__screen__navigation {
+    z-index: 10000;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 90;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  .smal__screen__navigation ul {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
+  .smal__screen__navigation ul li {
+    width: 100%;
+    min-height: 60px;
+    padding-top: 20px;
+  }
+  .smal__screen__navigation ul li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(244, 120, 31, 0.2);
+  }
+  .smal__screen__navigation ul li a {
+    color: #454444;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #454444;
+    padding-left: 22px;
+    text-decoration: none;
+  }
+  .smal__screen__navigation ul li a:focus,
+  .smal__screen__navigation ul li a:active {
+    text-decoration: none;
+  }
+  .__service_dropdown,
+  .__who_dropdown {
+    margin-top: 20px;
+    border-top: 1px solid rgba(244, 120, 31, 0.2) !important;
+    display: none;
+  }
+  .__service_dropdown div,
+  .__who_dropdown div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  .__service_dropdown div:first-of-type,
+  .__who_dropdown div:first-of-type {
+    border-bottom: 1px solid rgba(244, 120, 31, 0.2);
+  }
+  .img {
+    float: right;
+    margin-right: 22px;
+  }
 }
 /******************* HERO ***************************/
 .gulf_hero {
   width: 100%;
   height: 806px;
-  background: url("../images/pexels-janrune-smenes-reite-3207536 1.jpg");
+  background-image: url("../images/pexels-janrune-smenes-reite-3207536 1.jpg");
+  /* background: linear-gradient(359.69deg, #000000 12.61%, rgba(0, 0, 0, 0) 79.71%);; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -204,6 +300,23 @@ nav {
   color: #c4c4c4;
 }
 /******************* START WHAT WE DO *************************/
+.__new_what_do {
+  background-color: #fff;
+  padding-top: 48px;
+  padding-bottom: 106px;
+}
+.__what_we_do_text {
+  padding-top: 40px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+.__what_we_do_text_top {
+  padding-bottom: 40px;
+}
 ._what_we_do {
   padding-top: 48px;
   padding-bottom: 56px;
@@ -287,7 +400,9 @@ nav {
 }
 ._what_we_do_image {
   width: 40%;
-  height: 313px;
+  height: 405px;
+  background-position: center center;
+  background-size: cover;
 }
 ._what_we_do_text {
   width: 58%;
@@ -295,6 +410,7 @@ nav {
 ._what_we_do_text p {
   line-height: 25px;
   color: #454444;
+  padding-bottom: 1em;
 }
 .__gulf_inspection {
   background-image: url("../images/image 3.svg");
@@ -427,7 +543,7 @@ p.__address__padding {
 @media screen and (max-width: 880px) {
   .nav-item {
     display: inline;
-    margin-left: .8em;
+    margin-left: 0.8em;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -480,9 +596,9 @@ p.__address__padding {
     display: flex;
     align-items: center !important;
   }
-  .__app__logo{
-    font-size: 22px!important;
-    padding-top:.3em;
+  .__app__logo {
+    font-size: 22px !important;
+    padding-top: 0.3em;
   }
   .nav__toggler {
     display: inline;
@@ -498,7 +614,7 @@ p.__address__padding {
   .gulf_hero {
     width: 100%;
     height: 600px;
-    background: url("../images/hero_sm.svg");
+    background-image: url("../images/hero_sm.svg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -584,6 +700,17 @@ p.__address__padding {
   }
 }
 @media screen and (max-width: 500px) {
+  .__new_what_do {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+  .__what_we_do_text {
+    padding-top: 20px;
+  }
+  .__what_we_do_text_top {
+    padding-bottom: 40px;
+  }
+
   .__image_card {
     padding: 90px 5% 5% 5%;
     height: 140px;
@@ -619,8 +746,8 @@ p.__address__padding {
     display: inline;
     margin-right: 1em;
   }
-  .__app__logo{
-    font-size: 19px!important;
+  .__app__logo {
+    font-size: 19px !important;
   }
   #gulf_sm_text {
     font-family: Poppins;
@@ -653,18 +780,18 @@ p.__address__padding {
   }
 }
 @media screen and (max-width: 400px) {
-  .__app__logo{
-    font-size: 16px!important;
+  .__app__logo {
+    font-size: 16px !important;
   }
 }
 @media screen and (max-width: 350px) {
   .__app__logo {
-    font-size: 14px!important;
+    font-size: 14px !important;
   }
 }
 @media screen and (max-width: 320px) {
   .__app__logo {
-    font-size: 13px!important;
+    font-size: 13px !important;
   }
 }
 /****************** START TABLET SCREENS ******************/

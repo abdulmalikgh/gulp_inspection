@@ -11,41 +11,78 @@
 <body>
     <div class="gulf_page_wrapper">
         <header class="gulf_page_header">
-            <div class="_padding__section__wrapper" style="height: inherit;border:1px solid red;">
-                <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="#">
+            <div class="smal__screen__navigation">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="__with_drop_down">
+                        <a href="/index.html" class="whoweare">Who Are We <img class="whoimg img" src="./images/arrow_forward.svg" alt=""> </a>
+                        <div class="__who_dropdown">
+                            <div>
+                                <a class="" href="#">What we do</a>
+                            </div>
+                            <div class="">
+                                <a class="" href="#">Export Guidelines</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="__with_drop_down">
+                        <a href="" class="ourservice">Our Services <img class="serviceimg img" src="./images/arrow_forward.svg" alt=""></a>
+                        <div class="__service_dropdown">
+                            <div class="">
+                                <a class="" href="#">About Us</a>
+                            </div>
+                            <div class="">
+                                <a class="" href="#">Company Informationn</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="_padding__section__wrapper __wrapper_small" style="height: inherit;">
+                <button class="nav__toggler" type="button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <button class="close_btn">
+                    x
+                </button>
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
                         <h2 class="__app__logo">
                             <span class="_bg_color">G</span>ULF <span class="_bg_color">I</span>nspection <span class="_bg_color">S</span>ervices
                         </h2>
                     </a>
-                    <button class="navbar-toggler nav__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div  class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link __containing_drop_down" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Who Are We <img src="./images/arrow_down.svg" alt="">
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">What we do</a>
-                            <a class="dropdown-item" href="#">Export Guidelines</a>
+                            <a class="dropdown-item" href="index.html#whatwedo">What we do</a>
+                            <a class="dropdown-item" href="exportGuidelines.html">Export Guidelines</a>
+                          </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Our Service <img src="./images/arrow_down.svg" alt="">
+                            <a class="nav-link __containing_drop_down " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Our Services <img src="./images/arrow_down.svg" alt="">
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="#">About Us</a>
                               <a class="dropdown-item" href="#">Company Informationn</a>
+                            </div>
                           </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Contact Us</a>
+                          <a class="nav-link" href="contactUs.html">Contact Us</a>
                         </li>
                       </ul>
                     </div>
@@ -242,9 +279,63 @@
                 </p>
             </div>
         </section>
+         <!-- ******************* START FOOTER *************************** -->
+         <footer class="">
+            <div class="_padding__section__wrapper">
+                <div class="__footer__card__wrapper justify-content-between address">
+                    <div class="__footer__card">
+                        <h2 class="footer_header top">COMPANY ADDRESSES</h2>
+                        <p>Lagos – Head Office,</p>
+                        <p>25A Oyinkan Abayomi Drive,</p>
+                        <p>Ikoyi,</p>
+                        <p>Lagos.</p>
+                    </div>
+                    <div class="__footer__card footer_card_right">
+                        <h2 class="footer_header top">CONTACT</h2>
+                        <p class="__address__padding">Telephone:+234 812-575-4309</p>
+                        <p>Email:gulfinspection.nigeria@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-between socials__">
+                    <div class="__footer__card">
+                        <p>Port Harcourt – Eastern Zone</p>
+                        <p>302B Port Harcourt/ Aba Expressway</p>
+                        <p>Port Harcourt</p>
+                        <p>Rivers Sate</p>
+                        
+                    </div>
+                    <div class="__footer__card footer_card_right">
+                        <h2 class="footer_header">SOCIALS</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <h2>
+                            Gulf Inspection Ltd.
+                        </h2>
+                        <p>
+                            Copyright © 2021 gulfinspectionltd.com | Oil and Gas 
+                        </p>
+                        <p>
+                            Company incorporated since. | All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ******************* END FOOTER *************************** -->
     </div>
     <script src="./js/jquery.js"></script> 
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    </script>
 </body>
 </html>

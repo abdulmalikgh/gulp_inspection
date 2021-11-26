@@ -10,42 +10,83 @@
 <body>
     <div class="gulf_page_wrapper">
         <header class="gulf_page_header">
-            <nav class="__nav _padding__section__wrapper">
-                <div class="gulf_page_logo">
-                    <button class="nav__toggler">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </button>
-                    <h2>
-                        <span class="_bg_color">G</span>ULF <span class="_bg_color">I</span>nspection <span class="_bg_color">S</span>ervices
-                    </h2>
-                </div>  
-                <div class="gulf_page_nav">
-                    <ul class="gulf_nav">
-                        <li class="gulf_nav_item">
-                           <a href="" class="gulf_nav_link active">
-                               Home
-                           </a> 
+            <div class="smal__screen__navigation">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="__with_drop_down">
+                        <a href="" class="whoweare">Who Are We <img class="whoimg img" src="./images/arrow_forward.svg" alt=""> </a>
+                        <div class="__who_dropdown">
+                            <div>
+                                <a class="" href="#">What we do</a>
+                            </div>
+                            <div class="">
+                                <a class="" href="#">Export Guidelines</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="__with_drop_down">
+                        <a href="" class="ourservice">Our Services <img class="serviceimg img" src="./images/arrow_forward.svg" alt=""></a>
+                        <div class="__service_dropdown">
+                            <div class="">
+                                <a class="" href="#aboutus">About Us</a>
+                            </div>
+                            <div class="">
+                                <a class="" href="#">What we do</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="_padding__section__wrapper __wrapper_small" style="height: inherit;">
+                <button class="nav__toggler" type="button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <button class="close_btn">
+                    x
+                </button>
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <h2 class="__app__logo">
+                            <span class="_bg_color">G</span>ULF <span class="_bg_color">I</span>nspection <span class="_bg_color">S</span>ervices
+                        </h2>
+                    </a>
+                    <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="gulf_nav_item">
-                            <a href="" class="gulf_nav_link">
-                                About Us
-                            </a> 
-                         </li>
-                         <li class="gulf_nav_item">
-                            <a href="" class="gulf_nav_link">
-                                Our Service
-                            </a> 
-                         </li>
-                         <li class="gulf_nav_item">
-                            <a href="" class="gulf_nav_link">
-                                Contact Us
-                            </a> 
-                         </li>
-                    </ul>
-                </div>
-            </nav>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link __containing_drop_down" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Who Are We <img src="./images/arrow_down.svg" alt="">
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html#whatwedo">What we do</a>
+                            <a class="dropdown-item" href="exportGuidelines.html">Export Guidelines</a>
+                          </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link __containing_drop_down " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Our Services <img src="./images/arrow_down.svg" alt="">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="index.html#aboutus">About Us</a>
+                              <a class="dropdown-item" href="index.html#whatwedo">What we do</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contactUs.html">Contact Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
         <!-- ******************* DEFAULT *************************** -->
         <section class="__hero__section">
@@ -62,7 +103,7 @@
         </section>
         <!-- ******************* START WHAT WE DO *************************** -->
         <section>
-            <div class="_what_we_do _padding__section__wrapper">
+            <div class="_what_we_do _padding__section__wrapper" id="whatwedo">
                 <div class="__section__header">
                     <h2>
                         What We Do
@@ -126,20 +167,32 @@
             <div class="__who_we_are _padding__section__wrapper">
                 <div class="__section__header">
                     <h2>
-                        Who Are We?
-                    </h2>
+                        About Us
+                    </h2>   
                 </div>
                 <div class="__text__and__image">
-                    <div class="_what_we_do_image __gulf_inspection">
-    
-                    </div>
+                    
                     <div class="_what_we_do_text text_1">
                         <p>
                             GULF INSPECTION SERVICES LTD is a Nigeria-owned professional independent inspection company with international technical partners.
-                            Included in the Company’s scope of expertise is the verification and physical inspection of bulk cargoes including crude oil and gas, inspection, testing and Certification of manufactured and semi-manufactured products, shipping logistics/protocols and custody transfer documentation
+                        </p>
+                        <p>
+                            Included in the Company’s scope of expertise is the verification and physical inspection of bulk cargoes including crude oil and gas, inspection, testing and Certification of manufactured and semi-manufactured products, shipping logistics/protocols and custody transfer documentation.
+                        </p>
+                        <p>
+                            This work has been undertaken on behalf of a variety of clients, including both Government and Commercial organizations.
+                        </p>
+                        <p>
+                            The Company has been extensively involved in quality and quantity superintendence throughout the World, at the point of manufacture, storage, transit and shipment. 
+                        </p>
+                        <p>
+                            This work has been undertaken on behalf of variety of clients, including both Government and Commercial organizations.
                         </p>
                     </div>
-                    <div class="_what_we_do_text text_2">
+                    <div class="_what_we_do_image __gulf_inspection">
+    
+                    </div>
+                    <!-- <div class="_what_we_do_text text_2">
                         <p>
                             The Company, GULF INSPECTION SERVICES LTD. was incorporated in 2002.
                             Company personnel have many years of experience in surveillance, testing, audit and inspection of all trade products, including non-oil products, hydrocarbons and gas.
@@ -148,11 +201,57 @@
                     </div>
                     <div class="_what_we_do_image __the_company">
                         
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
         <!-- ******************* END OF WHAT WE DO *************************** -->
+            <!-- ******************* START WHO ARE WE  *************************** -->
+            <section class="__new_what_do">
+                <div class=" _padding__section__wrapper">
+                    <div class="__section__header">
+                        <h2>
+                            What We do
+                        </h2>   
+                    </div>
+                    <div class="__what_we_do_text">
+                        <div class="">
+                            <p class="__what_we_do_text_top">
+                                Pre-shipment Inspection Agents under the Federal Ministry of Finance Nigerian Export Supervision Scheme (NESS), ensuring that the quality and quantity of exports correlate in all respects with Exporters’ declarations to the Federal Ministry of Finance and Central Bank.
+                            </p>
+                            <p>
+                                Product Audit, Inspection, testing and Certification in regard to the following goods;
+                            </p>
+                            <div class="">
+                                <ul>
+                                    <li>
+                                        General Products (raw, semi-processed and processed)
+                                    </li>
+                                    <li>
+                                        Containerized Cargoes 
+                                    </li>
+                                    <li>
+                                        Crude Oil (Inspection, Sampling & Verification)
+                                    </li>
+                                    <li>
+                                        Mechanical Equipment (components and finished products)
+                                    </li>
+                                    <li>
+                                        Cargo Damage Surveys
+                                    </li>
+                                    <li>
+                                        Vessel Draft, on-hire and off-hire surveys
+                                    </li>
+                                    <li>
+                                        Bulk Minerals & Ores
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ******************* END OF WHAT WE DO *************************** -->
         <!-- ******************* END OUR PURPOSE *************************** -->
         <section class="__our_purpose__wrapper">
             <div class="__our_purpose _padding__section__wrapper">
@@ -252,10 +351,11 @@
                 </div>
             </div>
         </footer>
-        <!-- ******************* END PURPOSE *************************** -->
+        <!-- ******************* END FOOTER *************************** -->
     </div>
     <script src="./js/jquery.js"></script> 
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
