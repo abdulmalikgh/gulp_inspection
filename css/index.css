@@ -3,10 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
-ol,
+/* ol,
 ul {
   list-style: none;
-}
+} */
 img {
   max-width: 100%;
 }
@@ -41,8 +41,8 @@ p._sm {
   padding-right: 20%;
   padding-left: 20%;
 }
-._padding__section__wrapper{
-  max-width: 1072px!important;
+._padding__section__wrapper {
+  max-width: 1072px !important;
   margin-right: auto;
   margin-left: auto;
 }
@@ -54,20 +54,22 @@ p._sm {
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-nav.__nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav {
+  width: 100%;
+  padding: 0px !important;
   height: inherit;
 }
-
-.gulf_page_logo h2 {
+.navbar-brand,
+.nav-link {
+  color: #454444 !important;
+}
+.__app__logo{
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
   line-height: 33px;
-  color: #454444;
+  color: #454444 !important;
   text-transform: uppercase;
 }
 ._bg_color {
@@ -82,26 +84,7 @@ nav.__nav{
   color: #7c7c7c;
   padding-bottom: 0.5em;
 }
-.nav__toggler{
-  outline: none;
-  border: none;
-  background: transparent;
-  margin-right: 2em;
-  display: none;
-  width: 30px;
-}
-.nav__toggler:active, .nav__toggler:hover{
-  border:none;
-  outline: none;
-}
-.nav__toggler div{
-  height: 2px;
-  background-color: #000000;;
-  width: 30px;
-}
-.nav__toggler div:not(:last-child){
-  margin-bottom: 6px;
-}
+
 /******************* HEADER ***************************/
 /******************* NAVIGATION ***********************/
 .gulf_page_nav {
@@ -114,11 +97,11 @@ nav.__nav{
   margin: 0px !important;
   padding: 0px !important;
 }
-.gulf_nav_item {
+.nav-item {
   display: inline;
   margin-left: 3em;
 }
-.gulf_nav_link {
+.nav-link {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -126,11 +109,66 @@ nav.__nav{
   line-height: 22px;
   color: #454444;
 }
-.gulf_nav_link:active,
-.gulf_nav_link:hover,
+.nav-item:active,
+.nav-item:hover,
 .active {
   color: #f4781f;
   text-decoration: none;
+}
+.nav__toggler {
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-right: 2em;
+  display: none;
+  width: 30px;
+}
+.nav__toggler:active,
+.nav__toggler:hover {
+  border: none;
+  outline: none;
+}
+.nav__toggler div {
+  height: 2px;
+  background-color: #000000;
+  width: 30px;
+}
+.nav__toggler div:not(:last-child) {
+  margin-bottom: 6px;
+}
+.dropdown-menu {
+  border: none;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 0px;
+  width: 157px;
+  height: 96px;
+}
+.dropdown-item {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #454444;
+  background-color:#fff;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.dropdown-menu a:first-of-type{
+  border-bottom: 1px solid rgba(244, 120, 31, 0.2);;
+}
+.dropdown-item:active{
+  background-color: transparent;
+}
+.navbar-toggler{
+  outline: none;
+  border:none;
+}
+.navbar-toggler:active,.navbar-toggler:hover, .navbar-toggler:focus{
+  outline: none;
+  border:none;
 }
 /******************* HERO ***************************/
 .gulf_hero {
@@ -166,7 +204,7 @@ nav.__nav{
   color: #c4c4c4;
 }
 /******************* START WHAT WE DO *************************/
-._what_we_do{
+._what_we_do {
   padding-top: 48px;
   padding-bottom: 56px;
 }
@@ -198,7 +236,7 @@ nav.__nav{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap:3%;
+  gap: 3%;
 }
 .__image_card {
   width: 22%;
@@ -232,7 +270,7 @@ nav.__nav{
 }
 /******************* END WHAT WE DO ***************************/
 /******************* START WHO ARE WE *************************/
-.__main_who_are_we_section{
+.__main_who_are_we_section {
   width: 100%;
   background: rgba(244, 120, 31, 0.2);
   padding-top: 48px;
@@ -271,7 +309,7 @@ nav.__nav{
 }
 /******************* END WHO ARE WE ***************************/
 /******************* START OUR PURPOSE ************************/
-.__our_purpose__wrapper{
+.__our_purpose__wrapper {
   background-color: #ffffff;
 }
 .__our_purpose {
@@ -283,7 +321,7 @@ nav.__nav{
   display: flex;
   justify-content: space-between;
 }
-.__purpose__card{
+.__purpose__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,28 +342,28 @@ nav.__nav{
   color: #454444;
   padding-top: 41px;
   padding-bottom: 16px;
-  margin-bottom: 0px!important;
+  margin-bottom: 0px !important;
 }
-._purpose_text{
+._purpose_text {
   color: #454444;
   text-align: left;
 }
 /******************* END OUR PURPOSE **********************/
 /******************* END FOOTER ***************************/
-footer{
+footer {
   width: 100%;
-  padding-top: 66px ;
+  padding-top: 66px;
   padding-bottom: 116px;
-  background: #F4781F;
+  background: #f4781f;
 }
-.__footer__card__wrapper{
+.__footer__card__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.__footer__card{
+.__footer__card {
   width: 300px;
 }
-footer .copyright{
+footer .copyright {
   padding-top: 106px;
 }
 footer .copyright h2 {
@@ -334,62 +372,65 @@ footer .copyright h2 {
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
-  color: #E5E5E5;
+  color: #e5e5e5;
   padding-bottom: 24px;
 }
-footer .copyright p{
+footer .copyright p {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
-footer .copyright p:first-of-type{
+footer .copyright p:first-of-type {
   padding-bottom: 18px;
 }
-footer .socials__{
+footer .socials__ {
   padding-top: 84px;
 }
-footer .socials__ p, footer .address p{
+footer .socials__ p,
+footer .address p {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.footer_header{
+.footer_header {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-h2.top{
+h2.top {
   padding-bottom: 32px;
 }
-p.__address__padding{
+p.__address__padding {
   padding-bottom: 32px;
 }
 /******************* END FOOTER***************************/
 /****************** START LARGE AND MEDIUM DESKTOP SCREENS ******************/
-@media screen and (max-width: 1300px) {
-}
-@media screen and (max-width:  1150px) {
-  ._padding__section__wrapper{
+@media screen and (max-width: 1150px) {
+  ._padding__section__wrapper {
     padding-right: 7%;
     padding-left: 7%;
   }
-}
-@media screen and (max-width:  950px) {
-  .gulf_nav_item {
+  .nav-item {
     display: inline;
-    margin-left: 1em;
+    margin-left: 2em;
   }
 }
-@media screen  and (max-width:1000px) {
+@media screen and (max-width: 880px) {
+  .nav-item {
+    display: inline;
+    margin-left: .8em;
+  }
+}
+@media screen and (max-width: 1000px) {
   .__image_card {
     width: 30%;
   }
@@ -410,19 +451,19 @@ p.__address__padding{
   .__middle {
     width: 40%;
   }
-  ._last_side{
+  ._last_side {
     margin-right: auto;
     margin-left: auto;
     margin-top: 40px;
   }
-  .__bulk{
+  .__bulk {
     margin-right: auto;
     margin-left: auto;
   }
-  .__section__images{
+  .__section__images {
     justify-content: space-between;
   }
-  ._what_we_do{
+  ._what_we_do {
     padding-top: 28px;
     padding-bottom: 30px;
   }
@@ -431,16 +472,17 @@ p.__address__padding{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .gulf_page_nav{
+  .gulf_page_nav {
     display: none;
   }
-  .gulf_page_logo{
+  .gulf_page_logo {
     height: 43px;
     display: flex;
-    align-items: center!important;
+    align-items: center !important;
   }
-  .gulf_page_logo h2{
-    padding-top: .5em;
+  .__app__logo{
+    font-size: 22px!important;
+    padding-top:.3em;
   }
   .nav__toggler {
     display: inline;
@@ -449,7 +491,7 @@ p.__address__padding{
     box-shadow: 0px 0px 0px 0px;
   }
   /* HERO  */
-  .__hero__section{
+  .__hero__section {
     padding-left: 7%;
     padding-right: 7%;
   }
@@ -466,32 +508,34 @@ p.__address__padding{
   }
 }
 @media screen and (max-width: 650px) {
-  .__text__and__image{
+  .__text__and__image {
     flex-direction: column;
     justify-content: center;
   }
-  .__text__and__image div{
-    padding:0px!important;
-    margin:0px;
-    width:100%;
+  .__text__and__image div {
+    padding: 0px !important;
+    margin: 0px;
+    width: 100%;
   }
-  .text_1, .text_2, .__the_company{
-    margin-top: 30px!important;
+  .text_1,
+  .text_2,
+  .__the_company {
+    margin-top: 30px !important;
   }
-  .__gulf_inspection{
+  .__gulf_inspection {
     order: 1;
   }
-  ._what_we_do_image{
+  ._what_we_do_image {
     background-size: cover;
   }
-  .text_1{
+  .text_1 {
     order: 2;
   }
-  .__the_company{
-    order: 3
+  .__the_company {
+    order: 3;
   }
-  .text_2{
-    order: 4
+  .text_2 {
+    order: 4;
   }
 }
 @media screen and (max-width: 500px) {
@@ -508,46 +552,43 @@ p.__address__padding{
   .__middle {
     width: 48%;
   }
-  .___text__header{
+  .___text__header {
     padding-top: 10px;
   }
- .__img img{
-   width: 40px;
-   height: 40px;
+  .__img img {
+    width: 40px;
+    height: 40px;
   }
   .nav__toggler {
     display: inline;
     margin-right: 1em;
   }
-  .gulf_page_logo h2 {
-    font-size: 21px;
-  }
 }
 @media screen and (max-width: 668px) {
-  .footer_header{
+  .footer_header {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 16px;
   }
-  .__footer__card{
+  .__footer__card {
     width: 50%;
   }
-  .__footer__card p{
+  .__footer__card p {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px!important;
+    font-size: 13px !important;
     line-height: 13px;
   }
 }
 @media screen and (max-width: 500px) {
   .__image_card {
-    padding: 90px 5%  5% 5%;
+    padding: 90px 5% 5% 5%;
     height: 140px;
   }
-  .__product_audit{
+  .__product_audit {
     padding-top: 20px;
   }
   .__text__section {
@@ -564,30 +605,30 @@ p.__address__padding{
     font-weight: normal;
     font-size: 20px;
     line-height: 21px;
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
   }
-  .gulf_hero_header{
+  .gulf_hero_header {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  .nav__toggler{
+  .nav__toggler {
     display: inline;
     margin-right: 1em;
   }
-  .gulf_page_logo h2 {
-    font-size: 19px;
+  .__app__logo{
+    font-size: 19px!important;
   }
-  #gulf_sm_text{
+  #gulf_sm_text {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .gulf_hero {
     width: 100%;
@@ -599,31 +640,31 @@ p.__address__padding{
     display: flex;
     flex-direction: column;
     justify-content: center;
-  } 
-  p{
+  }
+  p {
     font-size: 15px;
   }
-  .__footer__card p{
+  .__footer__card p {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px!important;
+    font-size: 10px !important;
     line-height: 13px;
   }
 }
 @media screen and (max-width: 400px) {
-  .gulf_page_logo h2 {
-    font-size: 17px;
+  .__app__logo{
+    font-size: 16px!important;
   }
 }
 @media screen and (max-width: 350px) {
-  .gulf_page_logo h2 {
-    font-size: 15px;
+  .__app__logo {
+    font-size: 14px!important;
   }
 }
 @media screen and (max-width: 320px) {
-  .gulf_page_logo h2 {
-    font-size: 13px;
+  .__app__logo {
+    font-size: 13px!important;
   }
 }
 /****************** START TABLET SCREENS ******************/
