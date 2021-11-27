@@ -391,7 +391,23 @@ header{
   background-image: url("../images/Rectangle 23.svg");
 }
 /******************* END WHAT WE DO ***************************/
-/******************* START WHO ARE WE *************************/
+/******************* START WHO ARE WE AND ABOUT US *************************/
+.about__us{
+  width: 100%;
+  background: #fff;
+  padding-top: 48px;
+  padding-bottom: 86px;
+}
+.about_text p{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 25px;
+  color: #454444;
+  padding-bottom: 20px;
+}
+
 .__main_who_are_we_section {
   width: 100%;
   background: rgba(244, 120, 31, 0.2);
@@ -416,11 +432,11 @@ header{
 ._what_we_do_text {
   width: 58%;
 }
-._what_we_do_text p {
+/* ._what_we_do_text p {
   line-height: 25px;
   color: #454444;
   padding-bottom: 1em;
-}
+} */
 .__gulf_inspection {
   background-image: url("../images/image 3.svg");
   background-position: center center;
@@ -536,6 +552,9 @@ h2.top {
 }
 p.__address__padding {
   padding-bottom: 32px;
+}
+.footer__icons{
+  margin-top: 27px;
 }
 /******************* END FOOTER***************************/
 /****************** START LARGE AND MEDIUM DESKTOP SCREENS ******************/
