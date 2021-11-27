@@ -398,7 +398,7 @@ header{
   padding-top: 48px;
   padding-bottom: 86px;
 }
-.about_text p{
+.about_text p, .companyinfo_text p{
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -414,6 +414,18 @@ header{
   background-position: center center;
   background-size: cover;
 }
+/* COMPANY INFORMATION */
+.companyInformattion{
+  width: 40%;
+  height: 430px;
+  background-image:url("../images/companyinfo.svg");
+  background-position: center center;
+  background-size: cover;
+}
+.companyinfo_text{
+  margin-top: 40px;
+}
+/*  */
 .__main_who_are_we_section {
   width: 100%;
   background: rgba(244, 120, 31, 0.2);
