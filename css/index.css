@@ -407,7 +407,13 @@ header{
   color: #454444;
   padding-bottom: 20px;
 }
-
+.aboutusimage {
+  width: 40%;
+  height: 405px;
+  background-image:url("../images/lg/aboutus.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
 .__main_who_are_we_section {
   width: 100%;
   background: rgba(244, 120, 31, 0.2);
