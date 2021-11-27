@@ -13,13 +13,13 @@
             <div class="smal__screen__navigation">
                 <ul>
                     <li>
-                        <a href="/index.html">Home</a>
+                        <a class="home" href="/index.html">Home</a>
                     </li>
                     <li class="__with_drop_down">
                         <a href="" class="whoweare">Who Are We <img class="whoimg img" src="./images/arrow_forward.svg" alt=""> </a>
                         <div class="__who_dropdown">
                             <div>
-                                <a class="" href="#">What we do</a>
+                                <a class="link_what_we_do" href="#">What we do</a>
                             </div>
                             <div class="">
                                 <a class="" href="#">Export Guidelines</a>
@@ -59,25 +59,25 @@
                     </a>
                     <div  class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                          <a class="nav-link home active" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link __containing_drop_down" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link __containing_drop_down link_we_do" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Who Are We <img src="./images/arrow_down.svg" alt="">
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="index.html#whatwedo">What we do</a>
+                            <a class="dropdown-item __link_what_we_do" href="index.html#whatwedo">What we do</a>
                             <a class="dropdown-item" href="exportGuidelines.html">Export Guidelines</a>
                           </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link __containing_drop_down " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link __containing_drop_down link_our_service" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Our Services <img src="./images/arrow_down.svg" alt="">
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="index.html#aboutus">About Us</a>
-                              <a class="dropdown-item" href="index.html#whatwedo">What we do</a>
+                              <a class="dropdown-item" href="index.html#purpose">Company Information</a>
                             </div>
                           </li>
                         <li class="nav-item">
@@ -88,6 +88,9 @@
                 </nav>
             </div>
         </header>
+        <div class="__clear__fix">
+            
+        </div>
         <!-- ******************* DEFAULT *************************** -->
         <section class="__hero__section">
             <div class="gulf_hero">
@@ -160,10 +163,11 @@
                     </div>
                 </div>
             </div>
+            <div class=""id="aboutus"></div>
         </section>
         <!-- ******************* END WHAT WE DO *************************** -->
         <!-- ******************* START WHO ARE WE  *************************** -->
-        <section class="__main_who_are_we_section">
+        <section class="__main_who_are_we_section" >
             <div class="__who_we_are _padding__section__wrapper">
                 <div class="__section__header">
                     <h2>
@@ -207,7 +211,7 @@
         </section>
         <!-- ******************* END OF WHAT WE DO *************************** -->
             <!-- ******************* START WHO ARE WE  *************************** -->
-            <section class="__new_what_do">
+            <!-- <section class="__new_what_do">
                 <div class=" _padding__section__wrapper">
                     <div class="__section__header">
                         <h2>
@@ -250,10 +254,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- ******************* END OF WHAT WE DO *************************** -->
         <!-- ******************* END OUR PURPOSE *************************** -->
-        <section class="__our_purpose__wrapper">
+        <section class="__our_purpose__wrapper" id="purpose">
             <div class="__our_purpose _padding__section__wrapper">
                 <div class="__section__header">
                     <h2>
@@ -301,7 +305,7 @@
         </section>
         <!-- ******************* END OUR PURPOSE *************************** -->
         <!-- ******************* START FOOTER *************************** -->
-        <footer class="">
+        <footer class="" >
             <div class="_padding__section__wrapper">
                 <div class="__footer__card__wrapper justify-content-between address">
                     <div class="__footer__card">

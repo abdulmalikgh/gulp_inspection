@@ -10,6 +10,23 @@ let arrow_forward = './images/arrow_forward.svg'
 let serviceImage = document.querySelector('.serviceimg')
 let ourservice = document.querySelector('.ourservice')
 
+// NAVIGATION LINKS
+let home = document.querySelector('.home')
+let link_our_service = document.querySelector('.link_our_service')
+let link_we_do = document.querySelector('.link_we_do')
+let __link_what_we_do = document.querySelector('.__link_what_we_do')
+__link_what_we_do.addEventListener('click', function(e){
+    e.preventDefault()
+    link_we_do.classList.add('active')
+    home.classList.toggle('active')
+    link_our_service.classList.remove('active')
+    console.log(home)   
+})
+link_our_service.addEventListener('click', function(e){
+    e.preventDefault()
+    let links = document.querySelectorAll('.link_our_service a')
+    console.log('links', links)
+})
 button.addEventListener('click', function() {
     button.style.display = 'none'
     closeBtn.style.display = 'inline'
@@ -48,4 +65,8 @@ ourservice.addEventListener('click', function(e) {
     
     who.style.display = "none"
     whoImage.src = arrow_forward
+})
+
+$(window).scroll(function() {
+    $('header').toggleClass('scrolled',$(this).scrollTop() > 0)
 })
