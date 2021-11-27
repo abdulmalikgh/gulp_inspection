@@ -332,7 +332,7 @@ header{
 }
 .__section__header {
   width: 100%;
-  border-bottom: 5px solid #f4781f !important;
+  border-bottom: 3px solid #f4781f !important;
   padding: 0px !important;
 }
 .__section__header h2 {
