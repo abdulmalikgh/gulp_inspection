@@ -21,10 +21,11 @@ section {
   padding-top: 40px;
   padding-bottom: 8px;
 }
+
 .__our__addresss {
   padding-bottom: 20px;
 }
-.__contact_us_container p {
+.__contact_us_container p,.formresponse {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;

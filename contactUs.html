@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="./css/contactus.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("user_Lrn8qlj3KLELv0eCcH99K");
+        })();
+    </script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_Lrn8qlj3KLELv0eCcH99K");
+        })();
+    </script>
 </head>
 <body>
     <div class="gulf_page_wrapper">
@@ -141,32 +152,46 @@
                     </h2>
                 </div>
                 <div class="form__container">
-                    <form action="">
+                    <form action="" id="myForm">
                         <div class="form__inner">
                             <div class="__form__container">
                                 <div class="form_container">
-                                    <input type="text" placeholder="Full Name">
+                                    <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
                                 </div>
                             </div>
                             <div class="__email_and_phone">
                                 <div class="__form__container">
                                     <div class="form_container">
-                                        <input type="emnail" placeholder="Email Address">
+                                        <input type="emnail" id="email" name="email" placeholder="Email Address" required>
                                     </div>
                                 </div>
                                 <div class="__form__container">
                                     <div class="form_container">
-                                        <input type="tel" placeholder="Phone">
+                                        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="__form__container">
                                 <div class="form_container">
-                                    <input type="textarea" placeholder="Type a Message...">
+                                    <input type="textarea" id="message" name="message" placeholder="Type a Message..." required>
                                 </div>
                             </div>
-                            <div class="_form_button">
-                                <button>
+                            <div class="row justify-content-center" id="successMessage">
+                                <div class="col-md-7 ">
+                                    <div class="alert alert-success mt-4">
+                                        <p class="formresponse">Message sent successfully.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center" id="errorMessage">
+                               <div class="col-md-7 error">
+                                <div class="alert alert-danger">   
+                                    <p class="formresponse">An error occured. Try again latter.</p>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="_form_button" type="submit">
+                                <button id="submitBtn">
                                     submit
                                 </button>
                             </div>
@@ -232,9 +257,10 @@
         </footer>
         <!-- ******************* END FOOTER *************************** -->
     </div>
+  
     <script src="./js/jquery.js"></script> 
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
