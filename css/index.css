@@ -13,6 +13,10 @@ img {
 p {
   padding: 0px;
   margin: 0px;
+  font-family: Poppins;
+}
+h2,h1,p,a, ul li{
+  font-family: Poppins; 
 }
 .gulf_page_wrapper {
   width: 100%;
@@ -379,7 +383,7 @@ color: #000000;
 .__image_card {
   width: 22%;
   height: 250px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
   color: #ffffff;
   padding: 190px 18px 18px 18px;

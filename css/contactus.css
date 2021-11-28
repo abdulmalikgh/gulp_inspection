@@ -1,7 +1,8 @@
 @font-face {
   font-family: Poppins;
-  src: url('../images/poppins/Poppins-Light.ttf');
+  src: url("../images/poppins/Poppins-Light.ttf");
 }
+
 section {
   background: #fff;
 }
@@ -105,7 +106,7 @@ input[type="textarea"] {
   display: flex;
   justify-content: center;
 }
-button {
+._form_button button {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -118,6 +119,17 @@ button {
   border-radius: 5px;
   outline: none;
   border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+._form_button button:hover {
+  border: 1px solid #f4781f;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color:#fff;
+  color: #f4781f;
 }
 @media screen and (max-width: 767px) {
   .__email_and_phone {

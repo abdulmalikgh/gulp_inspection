@@ -12,43 +12,45 @@ let ourservice = document.querySelector('.ourservice')
 
 // NAVIGATION LINKS
 button.addEventListener('click', function() {
-    document.querySelector('.smal__screen__navigation').style.display = 'block'
-})
-closeBtn.addEventListener('click', function() {
-    service.style.display = "none"
-    who.style.display = "none"
-    button.style.display = 'inline'
-    closeBtn.style.display = 'none'
-    whoImage.src = arrow_forward
-    serviceImage.src = arrow_forward 
-    document.querySelector('.smal__screen__navigation').style.display = 'none'
-})
-whoweare.addEventListener('click', function(e) {
-   e.preventDefault()
-   if(who.style.display == "block") {
-        who.style.display = "none"
-        whoImage.src = arrow_forward
-   } else {
-        who.style.display = "block"
-        whoImage.src = arrowDown
+    let nav = document.querySelector('.smal__screen__navigation')
+   if(nav.style.display == 'block') {
+     return  nav.style.display = 'none'
    }
-   serviceImage.src = arrow_forward 
-   service.style.display = "none"
-})
-ourservice.addEventListener('click', function(e) {
-    e.preventDefault()
-    if(service.style.display == "block") {
-        service.style.display = "none"
-        serviceImage.src = arrowDown 
-   } else {
-        service.style.display = "block"
-        serviceImage.src = arrow_forward 
-   }
-    
-    who.style.display = "none"
-    whoImage.src = arrow_forward
+   return nav.style.display = 'block'
 })
 
-$(window).scroll(function() {
-    $('header').toggleClass('scrolled',$(this).scrollTop() > 0)
+// closeBtn.addEventListener('click', function() {
+//     service.style.display = "none"
+//     who.style.display = "none"
+//     button.style.display = 'inline'
+//     closeBtn.style.display = 'none'
+//     whoImage.src = arrow_forward
+//     serviceImage.src = arrow_forward 
+//     document.querySelector('.smal__screen__navigation').style.display = 'none'
+// })
+
+whoweare.addEventListener('click', function(e) {
+   e.preventDefault()
+    if(who.style.display == "block") {
+            who.style.display = "none"
+            whoImage.src = arrow_forward
+    } else {
+            who.style.display = "block"
+            whoImage.src = arrowDown
+    }
+    serviceImage.src = arrow_forward 
+    service.style.display = "none"
+})
+
+ourservice.addEventListener('click', function(e) {
+    e.preventDefault()
+        if(service.style.display == "block") {
+            service.style.display = "none"
+            serviceImage.src = arrow_forward 
+    } else {
+            service.style.display = "block"
+            serviceImage.src = arrowDown 
+    }
+        who.style.display = "none"
+        whoImage.src = arrow_forward
 })
