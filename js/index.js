@@ -12,8 +12,6 @@ let ourservice = document.querySelector('.ourservice')
 
 // NAVIGATION LINKS
 button.addEventListener('click', function() {
-    button.style.display = 'none'
-    closeBtn.style.display = 'inline'
     document.querySelector('.smal__screen__navigation').style.display = 'block'
 })
 closeBtn.addEventListener('click', function() {

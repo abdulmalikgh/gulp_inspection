@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Poppins;
+  src: url('../images/poppins/Poppins-Light.ttf');
+}
 .__export_section__inner {
   padding-top: 32px;
   padding-bottom: 101px;

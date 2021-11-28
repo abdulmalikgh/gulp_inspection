@@ -21,6 +21,10 @@ p {
 section {
   width: 100%;
 }
+@font-face {
+  font-family: Poppins;
+  src: url('../images/poppins/Poppins-Light.ttf');
+}
 /******************* DEFAULT FONT ********************/
 p._large {
   font-family: Poppins;
@@ -278,11 +282,10 @@ header{
 .gulf_hero {
   width: 100%;
   height: 806px;
-  background-image: url("../images/pexels-janrune-smenes-reite-3207536 1.jpg");
-  /* background: linear-gradient(359.69deg, #000000 12.61%, rgba(0, 0, 0, 0) 79.71%);; */
+  background-image: url("../images/lg/hero.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,8 +323,20 @@ header{
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 25px;
   color: #000000;
+}
+/* p{
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 30px;
+
+color: #000000;
+} */
+.readmore {
+  color:#fff!important;
 }
 .__what_we_do_text_top {
   padding-bottom: 40px;
@@ -361,16 +376,16 @@ header{
   gap: 3%;
 }
 .__image_card {
-  width: 22%;
-  height: 249px;
+  width: 23%;
+  height: 278px;
   margin-bottom: 40px;
   display: flex;
   color: #ffffff;
   padding: 190px 18px 18px 18px;
-  background-position: center center;
+  /* background-position: center center; */
 }
 .__grain {
-  background-image: url("../images/Rectangle 16.svg");
+  background-image: url("../images/lg/grain.jpeg");
 }
 .__bars {
   background-image: url("../images/Rectangle 19.svg");
