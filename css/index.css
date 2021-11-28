@@ -23,7 +23,7 @@ section {
 }
 @font-face {
   font-family: Poppins;
-  src: url('../images/poppins/Poppins-Light.ttf');
+  src: url("../images/poppins/Poppins-Light.ttf");
 }
 /******************* DEFAULT FONT ********************/
 p._large {
@@ -63,8 +63,8 @@ nav {
   padding: 0px !important;
   height: inherit;
 }
-header{
-  position:fixed;
+header {
+  position: fixed;
   top: 0;
   z-index: 100;
   background-color: #fff;
@@ -122,7 +122,7 @@ header{
 .nav-link:active,
 .nav-link:hover,
 .active {
-  color: #f4781f!important;
+  color: #f4781f !important;
   text-decoration: none;
 }
 .nav__toggler {
@@ -276,7 +276,7 @@ header{
   }
 }
 /******************* HERO ***************************/
-.__clear__fix{
+.__clear__fix {
   height: 94px;
 }
 .gulf_hero {
@@ -317,7 +317,7 @@ header{
   padding-top: 48px;
   padding-bottom: 106px;
 }
-.__what_we_do_text {
+/* .__what_we_do_text{
   padding-top: 40px;
   font-family: Poppins;
   font-style: normal;
@@ -325,7 +325,7 @@ header{
   font-size: 17px;
   line-height: 25px;
   color: #000000;
-}
+} */
 /* p{
   font-family: Poppins;
 font-style: normal;
@@ -336,7 +336,7 @@ line-height: 30px;
 color: #000000;
 } */
 .readmore {
-  color:#fff!important;
+  color: #fff !important;
 }
 .__what_we_do_text_top {
   padding-bottom: 40px;
@@ -362,6 +362,7 @@ color: #000000;
 .__text__section {
   padding-top: 40px;
   padding-bottom: 40px;
+  margin: 0px;
 }
 .__product_audit {
   padding-top: 40px;
@@ -376,44 +377,60 @@ color: #000000;
   gap: 3%;
 }
 .__image_card {
-  width: 23%;
-  height: 278px;
-  margin-bottom: 40px;
+  width: 22%;
+  height: 250px;
+  margin-bottom: 20px;
   display: flex;
   color: #ffffff;
   padding: 190px 18px 18px 18px;
-  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 .__grain {
-  background-image: url("../images/lg/grain.jpeg");
+  background-image: url("../images/lg/Group 13.png");
 }
 .__bars {
-  background-image: url("../images/Rectangle 19.svg");
+  background-image: url("../images/lg/Group 14.png");
 }
 .__pipes {
-  background-image: url("../images/Rectangle 18.svg");
+  background-image: url("../images/lg/Group 15.png");
 }
 .__gold {
-  background-image: url("../images/Rectangle 20.svg");
+  background-image: url("../images/lg/Group 16.png");
 }
 .__cargo {
-  background-image: url("../images/Rectangle 21.svg");
+  background-image: url("../images/lg/Group 17.png");
 }
 .__vessel {
-  background-image: url("../images/Rectangle 22.svg");
+  background-image: url("../images/lg/Group 18.png");
 }
 .__bulk {
-  background-image: url("../images/Rectangle 23.svg");
+  background-image: url("../images/lg/Group 19.png");
 }
 /******************* END WHAT WE DO ***************************/
 /******************* START WHO ARE WE AND ABOUT US *************************/
-.about__us{
+.read_more {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4781f;
+  text-decoration: none;
+}
+.read_more:hover {
+  color: #f4781f;
+  text-decoration: none;
+}
+.about__us {
   width: 100%;
   background: #fff;
   padding-top: 48px;
   padding-bottom: 86px;
 }
-.about_text p, .companyinfo_text p{
+.about_text p,
+.companyinfo_text p {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -425,19 +442,19 @@ color: #000000;
 .aboutusimage {
   width: 40%;
   height: 405px;
-  background-image:url("../images/lg/aboutus.jpeg");
+  background-image: url("../images/lg/aboutus.jpeg");
   background-position: center center;
   background-size: cover;
 }
 /* COMPANY INFORMATION */
-.companyInformattion{
+.companyInformattion {
   width: 40%;
   height: 430px;
-  background-image:url("../images/companyinfo.svg");
+  background-image: url("../images/companyinfo.svg");
   background-position: center center;
   background-size: cover;
 }
-.companyinfo_text{
+.companyinfo_text {
   margin-top: 40px;
 }
 /*  */
@@ -458,18 +475,14 @@ color: #000000;
 }
 ._what_we_do_image {
   width: 40%;
-  height: 405px;
+  height: 313px;
   background-position: center center;
   background-size: cover;
 }
 ._what_we_do_text {
   width: 58%;
 }
-/* ._what_we_do_text p {
-  line-height: 25px;
-  color: #454444;
-  padding-bottom: 1em;
-} */
+
 .__gulf_inspection {
   background-image: url("../images/image 3.svg");
   background-position: center center;
@@ -477,7 +490,7 @@ color: #000000;
   margin-bottom: 50px;
 }
 .__the_company {
-  background-image: url("../images/image 5.svg");
+  background-image: url("../images/companyinfo.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -586,7 +599,7 @@ h2.top {
 p.__address__padding {
   padding-bottom: 32px;
 }
-.footer__icons{
+.footer__icons {
   margin-top: 27px;
 }
 /******************* END FOOTER***************************/
