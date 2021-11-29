@@ -25,7 +25,8 @@ section {
 .__our__addresss {
   padding-bottom: 20px;
 }
-.__contact_us_container p,.formresponse {
+.__contact_us_container p,
+.formresponse {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -68,6 +69,19 @@ section {
   .contact_header {
     padding-top: 24px;
     padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  p._large{
+    font-size: 12px!important;
+    line-height: 18px!important;
+  }
+  input {
+    font-size: 12px!important;
+  }
+  ._form_button button {
+    font-size: 17px;
   }
 }
 
@@ -129,7 +143,7 @@ input[type="textarea"] {
   border-radius: 5px;
   outline: none;
   cursor: pointer;
-  background-color:#fff;
+  background-color: #fff;
   color: #f4781f;
 }
 @media screen and (max-width: 767px) {
