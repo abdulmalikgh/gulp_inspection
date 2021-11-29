@@ -334,24 +334,6 @@ header {
   font-size: 17px;
   line-height: 30px;
 }
-/* .__what_we_do_text{
-  padding-top: 40px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 25px;
-  color: #000000;
-} */
-/* p{
-  font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 30px;
-
-color: #000000;
-} */
 .readmore {
   color: #fff !important;
 }
@@ -653,6 +635,9 @@ p.__address__padding {
 
 /****************** START TABLET  SCREENS ******************/
 @media screen and (max-width: 767px) {
+  .companyInformattion {
+    margin-bottom: 40px !important;
+  }
   .__purpose__inner {
     padding-top: 70px;
     display: flex;
@@ -884,10 +869,12 @@ p.__address__padding {
     justify-content: center;
   }
   p._large,
-  .about_text p {
+  .about_text p,
+  .companyinfo_text p {
     font-size: 12px !important;
   }
-  .about_text p {
+  .about_text p,
+  .companyinfo_text p {
     padding-bottom: 15px;
   }
   p._sm {
@@ -983,6 +970,10 @@ p.__address__padding {
   }
   .aboutusimage {
     height: 267px;
+  }
+  .companyInformattion {
+    height: 308px;
+    margin-bottom: 26px;
   }
 }
 @media screen and (max-width: 400px) {
