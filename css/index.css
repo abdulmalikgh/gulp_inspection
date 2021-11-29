@@ -324,6 +324,15 @@ header {
   padding-top: 48px;
   padding-bottom: 106px;
 }
+.__section_what_we_do {
+  padding-top: 40px;
+}
+.__section_what_we_do p, .__section_what_we_do ul li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
 /* .__what_we_do_text{
   padding-top: 40px;
   font-family: Poppins;
@@ -794,10 +803,6 @@ p.__address__padding {
   }
 }
 @media screen and (max-width: 500px) {
-  .__new_what_do {
-    padding-top: 40px;
-    padding-bottom: 56px;
-  }
   .__what_we_do_text {
     padding-top: 20px;
   }
@@ -878,8 +883,8 @@ p.__address__padding {
     justify-content: center;
   }
   p._large {
-    font-size: 12px!important;
-    line-height: 18px!important;
+    font-size: 12px !important;
+    line-height: 18px !important;
   }
   p._sm {
     font-size: 9px;
@@ -928,13 +933,14 @@ p.__address__padding {
     font-size: 11px !important;
     line-height: 16px !important;
   }
-  .socials__ p,.address p {
-    font-size: 9px!important;
-    line-height: 13px!important;
+  .socials__ p,
+  .address p {
+    font-size: 9px !important;
+    line-height: 13px !important;
   }
-  ._emails{
-    font-size: 8px!important;
-    line-height: 13px!important;
+  ._emails {
+    font-size: 8px !important;
+    line-height: 13px !important;
   }
   footer {
     padding-top: 40px;
@@ -950,14 +956,24 @@ p.__address__padding {
     padding-bottom: 10px;
   }
   footer .copyright h2 {
-    padding-bottom:4px;
+    padding-bottom: 4px;
   }
   .__main_who_are_we_section {
-   background-color: #fff;
+    background-color: #fff;
   }
   .__main_who_are_we_section {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .__section_what_we_do p, .__section_what_we_do ul li {
+    font-size: 12px;
+  }
+  .__what_we_do_text_top {
+    padding-bottom: 20px;
+  }
+  .__new_what_do {
+    padding-top: 0px;
+    padding-bottom: 56px;
   }
 }
 @media screen and (max-width: 400px) {
