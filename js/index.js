@@ -5,14 +5,19 @@ let whoweare = document.querySelector('.whoweare')
 let who = document.querySelector('.__who_dropdown')
 let service = document.querySelector('.__service_dropdown')
 let whoImage = document.querySelector('.whoimg')
-let arrowDown = './images/arrow_down.svg'
-let arrow_forward = './images/arrow_forward.svg'
+let arrowDown = './images/arrow_down.png'
+let arrow_forward = './images/arrow_forward.png'
 let serviceImage = document.querySelector('.serviceimg')
 let ourservice = document.querySelector('.ourservice')
+let remove = document.querySelector('.remove')
+let navigaton = document.querySelector('.smal__screen__navigation')
+let nav = document.querySelector('.smal__screen__navigation')
 
+remove.addEventListener('click', function(){
+    return  nav.style.display = 'none'
+})
 // NAVIGATION LINKS
 button.addEventListener('click', function() {
-    let nav = document.querySelector('.smal__screen__navigation')
    if(nav.style.display == 'block') {
      return  nav.style.display = 'none'
    }

@@ -134,7 +134,13 @@ header {
   border: none;
   background: transparent;
   margin-right: 2em;
-  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px;
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .close_btn {
   outline: none;
@@ -153,6 +159,7 @@ header {
   height: 2px;
   background-color: #000000;
   width: 30px;
+  padding:0px;
 }
 .nav__toggler div:not(:last-child) {
   margin-bottom: 6px;
@@ -381,7 +388,7 @@ header {
   margin-bottom: 40px;
   display: flex;
   color: #ffffff;
-  padding: 190px 18px 18px 18px;
+  padding: 170px 18px 18px 18px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -690,8 +697,8 @@ p.__address__padding {
     box-shadow: 0px 0px 0px 0px;
   }
   .__hero__section {
-    padding-left: 7%;
-    padding-right: 7%;
+    /* padding-left: 7%;
+    padding-right: 7%; */
   }
   .gulf_hero {
     width: 100%;
@@ -881,10 +888,6 @@ p.__address__padding {
     font-size: 9px;
     line-height: 13px;
   }
-  /* p {
-    font-size: 15px;
-  } */
-  /* whta we do */
   ._what_we_do_image {
     height: 269px;
   }
@@ -913,13 +916,6 @@ p.__address__padding {
     font-size: 9px !important;
     line-height: 9px !important;
   }
-  /* .__footer__card p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 10px !important;
-    line-height: 13px;
-  } */
   .copyright h2 {
     font-size: 11px !important;
     line-height: 16px !important;
