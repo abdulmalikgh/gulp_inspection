@@ -327,7 +327,8 @@ header {
 .__section_what_we_do {
   padding-top: 40px;
 }
-.__section_what_we_do p, .__section_what_we_do ul li {
+.__section_what_we_do p,
+.__section_what_we_do ul li {
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -882,9 +883,12 @@ p.__address__padding {
     flex-direction: column;
     justify-content: center;
   }
-  p._large {
+  p._large,
+  .about_text p {
     font-size: 12px !important;
-    line-height: 18px !important;
+  }
+  .about_text p {
+    padding-bottom: 15px;
   }
   p._sm {
     font-size: 9px;
@@ -965,15 +969,20 @@ p.__address__padding {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .__section_what_we_do p, .__section_what_we_do ul li {
+  .__section_what_we_do p,
+  .__section_what_we_do ul li {
     font-size: 12px;
   }
   .__what_we_do_text_top {
     padding-bottom: 20px;
   }
-  .__new_what_do {
+  .__new_what_do,
+  .about__us {
     padding-top: 0px;
     padding-bottom: 56px;
+  }
+  .aboutusimage {
+    height: 267px;
   }
 }
 @media screen and (max-width: 400px) {
