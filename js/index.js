@@ -17,7 +17,7 @@ remove.addEventListener('click', function(){
     return  nav.style.display = 'none'
 })
 // NAVIGATION LINKS
-button.addEventListener('click', function() {
+button.addEventListener('mouseover', function() {
    if(nav.style.display == 'block') {
      return  nav.style.display = 'none'
    }
